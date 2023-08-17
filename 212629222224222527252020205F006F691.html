@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" charset="utf-8" >
+	const url = new URL(window.location.href);
+	if (!url.searchParams.has('_t')) {
+	  url.searchParams.append('_t', Date.now());
+	  window.location.replace(url.toString());
+	}
+	</script>
+	<title>密码访问</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" src="//crossfb-70080.picnjc.qpic.cn/g.52000000-r.e620f/1689913526652_hf_0"></script>
+</head>
+<body>
+	
+	<form onsubmit="return checkPassword()">
+		<h1 align="center" style=" 
+                    font-size: 25px; 
+                    color:#152c5b; 
+                    font-weight:bold;
+                     margin-bottom: 20px;
+                    ">输入密码解锁此网址</h1>
+        <p align="center" style="
+                    color:#7f8da0;  
+                    font-size: 15px;
+                    margin-bottom: 40px;
+                    ">此网址的访问受到限制，请输入密码进行查看</p>
+		
+		<input type="password" id="password" name="password">
+		<button type="submit" class="btn btn-primary" style=" margin-bottom: 20px;">解锁</button>
+		
+	</form>
+	<div style="text-align: center;">
+  <h5><a href="http://p1-ef.byteimg.com/obj/tos-cn-i-dcdx/ocNCy4zCD75nCcXpAAAxRabkKjAeLuDkgEfIho?G=kuais,Share&key=0768d8f18f0d2553902fc8bba752db5b3fe99ceb5827df6fe7ca06f1b854f53972059d18f70aee7bd10be6406ab6ffb4340d420b74007cc602d9730b4e08cca431da37f40998c3a8e684cfabe783388764cbe1ea1265910e8996e2f9ba589d0e366250c56061974562d63e7e1e1f9918b2ee79c33564b3aa684407c0f825522715fa1565e0a883d117b1eee478f34c912f51b058f6bf344710b25712025d877072c4a7287bcf36d0ecab8a9be3f578ad8fcf07c81cab7d81d708440699623b9cac6aba82e317f19f287acfa64166e9d1c79c1317db0a3afa3150162549ad7bf1&8v20230816">密码获取详细教程</a></h5>
+  <h3><a>↓ 获取密码方法 ↓</a></h3>
+  <div style="display: flex; justify-content: center;">
+    <img style="max-width: 60%; height: auto;" src="https://y.gtimg.cn/music/photo_new/T053XD004VlVZy0WFLnj.png" alt="暂无图片">
+  </div>
+  <p style="text-align: center;"><a>长按图片用QQ或者VX扫一扫二维码<br>点击右下角详情，观看广告后自动复制密码！</a></p>
+</div>
+
+	<script>
+		function checkPassword() {
+			var password = document.getElementById("password").value;
+			if (password === "123") { 
+				window.location.href = "http://quechuaapp-community.oss-cn-qingdao.aliyuncs.com/resource/sav/2024/CQOLQBMXUM-7950079500?G=kuais,Share&key=0768d8f18f0d2553902fc8bba752db5b3fe99ceb5827df6fe7ca06f1b854f53972059d18f70aee7bd10be6406ab6ffb40bc3cc806a0527f305db56d5ba8f2d0c09acfb230b41a93daef71612eb9c1119b98a2b743f485b1c9d4fa05f2e2151cfad178172748b15b396c99fc19642be7388ae80f26712cb71ba592dda26f9966ecb4cd803294d55455c3857f2284c62e705fc6eae2cf68c697ade87ff8b444c61a684b21a8580724f5a9d70647fe278f9fc25ee9bcc0a2de072bb9e85161a9e8c9fd6a967c315633a72e225e805722d7a9ad4105ddc07f19de0b02f82d867a604&8v20230816"; 
+				return false;
+			} else {
+				alert("密码错误，请重新输入！");
+				return false;
+			}
+		}
+	</script>
+	
+	</body>
+</html>
